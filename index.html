@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Beads - Elegant Jewelry Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-gem"></i>
+                    <h1>Azure<span>Beads</span></h1>
+                </div>
+                
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#beads" class="nav-link">Beads</a></li>
+                        <li><a href="#bracelets" class="nav-link">Bracelets</a></li>
+                        <li><a href="#collections" class="nav-link">Collections</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                    </ul>
+                </nav>
+                
+                <div class="header-actions">
+                    <div class="search-box">
+                        <i class="fas fa-search"></i>
+                        <input type="text" placeholder="Search products...">
+                    </div>
+                    <div class="cart-icon" id="cartIcon">
+                        <i class="fas fa-shopping-bag"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <button class="menu-toggle" id="menuToggle">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-header">
+            <h3>Menu</h3>
+            <button class="close-menu" id="closeMenu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <ul class="mobile-nav">
+            <li><a href="#home" class="mobile-nav-link active">Home</a></li>
+            <li><a href="#beads" class="mobile-nav-link">Beads</a></li>
+            <li><a href="#bracelets" class="mobile-nav-link">Bracelets</a></li>
+            <li><a href="#collections" class="mobile-nav-link">Collections</a></li>
+            <li><a href="#about" class="mobile-nav-link">About</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title">Elegant Handcrafted Jewelry</h2>
+                <p class="hero-subtitle">Discover our curated collection of premium beads and bracelets, crafted for those who appreciate timeless beauty.</p>
+                <div class="hero-buttons">
+                    <a href="#beads" class="btn btn-primary">Shop Beads</a>
+                    <a href="#bracelets" class="btn btn-outline">View Bracelets</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collections</h2>
+                <p class="section-subtitle">Curated selections for every style and occasion</p>
+            </div>
+            
+            <div class="collections-grid">
+                <div class="collection-card">
+                    <div class="collection-image" style="background-color: #b8e2f2;">
+                        <i class="fas fa-water collection-icon"></i>
+                    </div>
+                    <h3>Ocean Breeze</h3>
+                    <p>Aqua and turquoise beads inspired by tropical waters</p>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-image" style="background-color: #e3f2fd;">
+                        <i class="fas fa-cloud collection-icon"></i>
+                    </div>
+                    <h3>Cloud Whisper</h3>
+                    <p>Soft pastel beads with delicate finishes</p>
+                </div>
+                
+                <div class="collection-card">
+                    <div class="collection-image" style="background-color: #d1e8ff;">
+                        <i class="fas fa-star collection-icon"></i>
+                    </div>
+                    <h3>Starlight</h3>
+                    <p>Crystal and silver beads that catch the light</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beads Section -->
+    <section class="products-section" id="beads">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Premium Beads</h2>
+                <p class="section-subtitle">Hand-selected beads for your creative projects</p>
+            </div>
+            
+            <div class="products-grid" id="beadsContainer">
+                <!-- Beads will be loaded by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="btn-text">
+                    View All Beads
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bracelets Section -->
+    <section class="products-section bg-light" id="bracelets">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Handcrafted Bracelets</h2>
+                <p class="section-subtitle">Ready-to-wear bracelets for every wrist</p>
+            </div>
+            
+            <div class="products-grid" id="braceletsContainer">
+                <!-- Bracelets will be loaded by JavaScript -->
+            </div>
+            
+            <div class="section-footer">
+                <a href="#" class="btn-text">
+                    View All Bracelets
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Azure Beads was born from a passion for creating beautiful, timeless jewelry that celebrates individuality. Each piece is carefully crafted with attention to detail and quality.</p>
+                    <p>We source our materials from ethical suppliers and work with talented artisans to bring you jewelry that tells a story.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-leaf"></i>
+                            <span>Ethically Sourced</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-hand-sparkles"></i>
+                            <span>Handcrafted</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-shipping-fast"></i>
+                            <span>Free Shipping</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-gem"></i>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-modal-content">
+            <div class="cart-modal-header">
+                <h3>Your Shopping Bag</h3>
+                <button class="close-cart" id="closeCart">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            
+            <div class="cart-modal-body">
+                <div class="empty-cart" id="emptyCart">
+                    <i class="fas fa-shopping-bag"></i>
+                    <p>Your bag is empty</p>
+                    <a href="#beads" class="btn btn-primary">Start Shopping</a>
+                </div>
+                
+                <div class="cart-items" id="cartItems">
+                    <!-- Cart items will be loaded by JavaScript -->
+                </div>
+            </div>
+            
+            <div class="cart-modal-footer">
+                <div class="cart-summary">
+                    <div class="cart-total">
+                        <span>Total</span>
+                        <span class="total-amount">$<span id="cartTotal">0.00</span></span>
+                    </div>
+                    <p class="shipping-note">Free shipping on orders over $50</p>
+                </div>
+                <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-gem"></i>
+                        <h2>Azure<span>Beads</span></h2>
+                    </div>
+                    <p class="footer-description">Creating elegant jewelry for everyday wear and special occasions since 2023.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#beads">All Beads</a></li>
+                        <li><a href="#bracelets">Bracelets</a></li>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#">New Arrivals</a></li>
+                        <li><a href="#">Best Sellers</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Returns & Exchanges</a></li>
+                        <li><a href="#">Size Guide</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe for updates and exclusive offers</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Your email address" id="newsletterEmail">
+                        <button class="btn btn-primary" id="subscribeBtn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Azure Beads. All rights reserved.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
